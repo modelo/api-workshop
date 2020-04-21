@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.controls {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+}
+
+.model-viewer {
+  width: 100vw;
+  height: 100vh;
+}
+
+.model-viewer {
+  border-left: 1px solid #dedede;
+}
+
+.button {
+  background: #dedede;
+  padding: 8px;
+  cursor: pointer;
+  border: 2px solid #dedede;
+  margin-left: 10px;
+}
+
+.button:active {
+  border: 2px solid black;
+}
