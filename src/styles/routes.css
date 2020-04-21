@@ -1,0 +1,14 @@
+.routes {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.route {
+  padding: 6px;
+  background: #dedede;
+}

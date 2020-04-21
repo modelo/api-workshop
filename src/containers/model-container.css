@@ -1,0 +1,8 @@
+.model-container-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.model-container {
+  height: 100%;
+}
