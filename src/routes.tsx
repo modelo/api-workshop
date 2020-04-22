@@ -18,17 +18,18 @@ const routes = [
 const Links = (props: RouteComponentProps<{ children: React.ReactNode }>) => {
   const { children } = props;
   return (
-    <div className="routes">
-      {routes.map((route) => (
-        <div key={route.link} className={classNames('route', { 'route--active': props.uri == route.link })}>
-          <Link to={route.link} getProps={(props) => ({ style: { color: props.isCurrent ? 'red' : 'black' } })}>
-            <div>{route.name}</div>
-          </Link>
-        </div>
-      ))}
-
+    <>
+      <div className="routes">
+        {routes.map((route) => (
+          <div key={route.link} className={classNames('route', { 'route--active': props.uri == route.link })}>
+            <Link to={route.link} getProps={(props) => ({ style: { color: props.isCurrent ? 'red' : 'black' } })}>
+              <div>{route.name}</div>
+            </Link>
+          </div>
+        ))}
+      </div>
       {children}
-    </div>
+    </>
   );
 };
 
